@@ -1,6 +1,14 @@
 # Prerequisites
 *.d
 
+# Ignore binaries
+*
+!/**/
+!*.*
+
+# Unignore Makefiles recursively
+!**/Makefile
+
 # Object files
 *.o
 *.ko
@@ -50,3 +58,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
